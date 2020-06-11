@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="24/7 HOSPITAL,CHENNAI"
+                android:textAlignment="center"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ph No :"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="0123456789"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif-monospace"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="Date:"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="upday"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="40dp"
+                android:text="Name :"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="patient's name"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <ImageButton
+                    android:id="@+id/voice_btn1"
+                    android:layout_width="52dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/microphonee" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="Weight :"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="patient's weight"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <ImageButton
+                    android:id="@+id/voice_btn2"
+                    android:layout_width="52dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/microphonee" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="Age :"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="patient's age"
+                    android:inputType="number"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <ImageButton
+                    android:id="@+id/voice_btn3"
+                    android:layout_width="52dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/microphonee" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="Gender :"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Male"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Female"
+                    android:fontFamily="sans-serif-condensed"/>
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="258dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="male/female"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="MORNING MEDICINE"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:text="Before Food :"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="medicine before breakfast"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <ImageButton
+                    android:id="@+id/voice_btn4"
+                    android:layout_width="52dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/microphonee" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:text="After Food:"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="medicine after breakfast"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <ImageButton
+                    android:id="@+id/voice_btn5"
+                    android:layout_width="52dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/microphonee" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="NIGHT MEDICINE"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:text="Before Food :"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="medicine before dinner"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <ImageButton
+                    android:id="@+id/voice_btn6"
+                    android:layout_width="52dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/microphonee" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:text="After Food :"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint="medicine after dinner"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <ImageButton
+                    android:id="@+id/voice_btn7"
+                    android:layout_width="52dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/microphonee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:onClick="createMyPDF"
+                    android:text="Generate pdf"
+                    android:textAlignment="center"
+                    android:background="@drawable/button_background"/>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:onClick="reload"
+                    android:text="Reload"
+                    android:textAlignment="center"
+                    android:background="@drawable/button_background"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
